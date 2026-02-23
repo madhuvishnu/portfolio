@@ -93,6 +93,13 @@ body {
     animation: rise 620ms ease both;
 }
 
+.hero-layout {
+    display: grid;
+    grid-template-columns: 1.5fr 1fr;
+    gap: 1.4rem;
+    align-items: start;
+}
+
 .hero-kicker {
     display: inline-block;
     font-family: "IBM Plex Mono", monospace;
@@ -109,7 +116,7 @@ body {
 .hero h1 {
     font-size: clamp(2rem, 5vw, 3.7rem);
     line-height: 1.1;
-    max-width: 16ch;
+    max-width: 18ch;
 }
 
 .hero-copy {
@@ -122,6 +129,39 @@ body {
     display: flex;
     gap: 0.8rem;
     margin-top: 1.8rem;
+}
+
+.profile-card {
+    background: linear-gradient(160deg, rgba(23, 35, 62, 0.9), rgba(12, 19, 35, 0.9));
+    border: 1px solid var(--line);
+    border-radius: var(--radius);
+    box-shadow: var(--shadow);
+    padding: 1rem;
+}
+
+.profile-photo {
+    width: 100%;
+    aspect-ratio: 1 / 1;
+    object-fit: cover;
+    border-radius: 14px;
+    border: 1px solid rgba(255, 255, 255, 0.14);
+    background: linear-gradient(145deg, #1f2d4e, #162341);
+}
+
+.profile-name {
+    margin-top: 0.8rem;
+    font-weight: 700;
+}
+
+.profile-role {
+    color: var(--muted);
+    font-size: 0.9rem;
+}
+
+.profile-note {
+    margin-top: 0.55rem;
+    font-size: 0.8rem;
+    color: #b8c7e2;
 }
 
 .btn {
@@ -149,7 +189,7 @@ body {
 }
 
 .hero-metrics {
-    margin-top: 2.6rem;
+    margin-top: 2rem;
     display: grid;
     grid-template-columns: repeat(3, minmax(130px, 1fr));
     gap: 0.9rem;
@@ -205,7 +245,7 @@ body {
 }
 
 .project-grid {
-    grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
 }
 
 .card {
@@ -247,6 +287,95 @@ body {
 
 .card p {
     color: #ccdaee;
+}
+
+.project-card {
+    position: relative;
+    overflow: hidden;
+    background: linear-gradient(165deg, rgba(25, 39, 69, 0.96), rgba(14, 22, 40, 0.96));
+    border: 1px solid rgba(120, 162, 231, 0.28);
+    border-radius: var(--radius);
+    padding: 1.2rem;
+    box-shadow: var(--shadow);
+}
+
+.project-card::after {
+    content: "";
+    position: absolute;
+    width: 120px;
+    height: 120px;
+    border-radius: 999px;
+    top: -55px;
+    right: -36px;
+    background: radial-gradient(circle, rgba(88, 166, 255, 0.38), rgba(88, 166, 255, 0));
+    pointer-events: none;
+}
+
+.project-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 0.85rem;
+}
+
+.project-logo {
+    width: 42px;
+    height: 42px;
+    border-radius: 12px;
+    display: grid;
+    place-items: center;
+    font-family: "IBM Plex Mono", monospace;
+    font-weight: 600;
+    font-size: 0.85rem;
+    color: #f6fbff;
+}
+
+.logo-compute { background: linear-gradient(135deg, #1f8fbc, #4fb3ff); }
+.logo-raitha { background: linear-gradient(135deg, #26a16f, #4be89a); }
+.logo-gan { background: linear-gradient(135deg, #7c62ff, #4ea4ff); }
+.logo-yolo { background: linear-gradient(135deg, #d98b2f, #ffd968); color: #2d1c05; }
+.logo-microvm { background: linear-gradient(135deg, #3e7aff, #65d0ff); }
+.logo-serverless { background: linear-gradient(135deg, #6a8a1f, #b7df4d); color: #172100; }
+.logo-sdn { background: linear-gradient(135deg, #005f86, #17b9de); }
+.logo-ceph { background: linear-gradient(135deg, #8f3cbe, #d785ff); }
+.logo-automation { background: linear-gradient(135deg, #7a8797, #d1deea); color: #122030; }
+
+.project-type {
+    font-family: "IBM Plex Mono", monospace;
+    font-size: 0.75rem;
+    text-transform: uppercase;
+    letter-spacing: 0.07em;
+    color: #b9cdf0;
+}
+
+.project-card h3 {
+    margin-bottom: 0.45rem;
+    font-size: 1.08rem;
+}
+
+.project-card p {
+    color: #cfddf3;
+}
+
+.project-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    margin-top: 0.9rem;
+}
+
+.project-tags span {
+    font-family: "IBM Plex Mono", monospace;
+    font-size: 0.72rem;
+    border: 1px solid rgba(255, 255, 255, 0.18);
+    border-radius: 999px;
+    padding: 0.24rem 0.55rem;
+    color: #d7e8ff;
+    background: rgba(255, 255, 255, 0.04);
+}
+
+.research-grid .project-card {
+    border-color: rgba(80, 208, 204, 0.26);
 }
 
 .tags {
@@ -305,6 +434,16 @@ body {
     to {
         opacity: 1;
         transform: translateY(0);
+    }
+}
+
+@media (max-width: 980px) {
+    .hero-layout {
+        grid-template-columns: 1fr;
+    }
+
+    .profile-card {
+        max-width: 360px;
     }
 }
 

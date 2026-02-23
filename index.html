@@ -26,6 +26,7 @@
             <li><a href="#about">About</a></li>
             <li><a href="#experience">Experience</a></li>
             <li><a href="#projects">Projects</a></li>
+            <li><a href="#research">R&D</a></li>
             <li><a href="#skills">Skills</a></li>
             <li><a href="#contact">Contact</a></li>
         </ul>
@@ -34,44 +35,60 @@
 
 <main id="top">
     <section class="hero shell">
-        <p class="hero-kicker">Linux Data Center R&D | AI Engineer</p>
-        <h1>Designing production infrastructure for intelligent systems.</h1>
-        <p class="hero-copy">
-            I build secure, high-throughput Linux platforms and ML systems that scale from research to production.
-            My work spans SDN architecture, model serving pipelines, and operational automation.
-        </p>
-        <div class="hero-cta">
-            <a href="#contact" class="btn btn-primary">Contact Me</a>
-            <a href="#projects" class="btn btn-ghost">View Projects</a>
+        <div class="hero-layout">
+            <div>
+                <p class="hero-kicker">Linux Data Center R&D | AI Engineer</p>
+                <h1>Building scalable infrastructure and production AI systems.</h1>
+                <p class="hero-copy">
+                    I specialize in Linux data center research, storage and network virtualization,
+                    and end-to-end AI system design. My work focuses on high-performance infrastructure,
+                    secure model deployment, and production-grade MLOps pipelines.
+                </p>
+                <div class="hero-cta">
+                    <a href="#contact" class="btn btn-primary">Contact Me</a>
+                    <a href="#projects" class="btn btn-ghost">View Projects</a>
+                </div>
+            </div>
+
+            <aside class="profile-card">
+                <img src="assets/profile.jpg" alt="Photo of MadhuKumar G" class="profile-photo" />
+                <p class="profile-name">MadhuKumar G</p>
+                <p class="profile-role">Linux DC R&D and AI Engineer</p>
+                
+            </aside>
         </div>
+
         <div class="hero-metrics">
             <article>
                 <p class="metric-value">2+</p>
-                <p class="metric-label">Years Engineering</p>
+                <p class="metric-label">Years Professional Experience</p>
             </article>
             <article>
-                <p class="metric-value">10+</p>
-                <p class="metric-label">Production Features</p>
+                <p class="metric-value">15+</p>
+                <p class="metric-label">Production Features Delivered</p>
             </article>
             <article>
-                <p class="metric-value">4</p>
-                <p class="metric-label">Core Domains</p>
+                <p class="metric-value">6</p>
+                <p class="metric-label">Core Technical Domains</p>
             </article>
         </div>
     </section>
 
     <section id="about" class="section shell">
         <p class="section-eyebrow">About</p>
-        <h2>Engineering with reliability, security, and performance in mind.</h2>
+        <h2>Engineering reliable systems for data centers and intelligent platforms.</h2>
         <p class="section-intro">
-            I focus on Linux data center R&D, virtualization networking, and practical AI delivery. My goal is to make
-            advanced systems stable, maintainable, and deployment-ready.
+            I work at the intersection of Linux infrastructure and Artificial Intelligence.
+            My focus areas include data center networking, distributed storage systems,
+            virtualization, AI model training, and MLOps automation.
+            I design systems that are secure, scalable, and production-ready,
+            bridging research engineering with real-world deployment.
         </p>
     </section>
 
     <section id="experience" class="section shell">
         <p class="section-eyebrow">Experience</p>
-        <h2>Professional work</h2>
+        <h2>Professional Work</h2>
         <div class="timeline">
             <article class="card">
                 <div class="card-head">
@@ -80,10 +97,12 @@
                 </div>
                 <p class="card-subtitle">Vigyanlabs Innovation Pvt Ltd</p>
                 <ul>
-                    <li>Designed SDN and OVN-based data center networking architecture.</li>
-                    <li>Built overlay networking and virtualization research prototypes.</li>
-                    <li>Delivered ComputeAI platform with MLflow and Triton inference services.</li>
-                    <li>Implemented secure multi-user APIs and production inference workflows.</li>
+                    <li>Designed and researched SDN and OVN-based network virtualization for data centers.</li>
+                    <li>Worked on Linux virtualization, overlay networking, and traffic optimization.</li>
+                    <li>Implemented distributed storage solutions using Ceph and Petasan.</li>
+                    <li>Built ComputeAI platform integrating MLflow, Triton Inference Server, and PostgreSQL.</li>
+                    <li>Designed secure multi-user authentication and API key-based inference systems.</li>
+                    <li>Automated services using systemd, shell scripting, and Linux process management.</li>
                 </ul>
             </article>
 
@@ -94,9 +113,10 @@
                 </div>
                 <p class="card-subtitle">Ogma Technologies LLP</p>
                 <ul>
-                    <li>Developed cross-platform products using Flutter.</li>
-                    <li>Built backend services with Java Spring Boot.</li>
-                    <li>Shipped REST APIs and MongoDB-backed features for production use.</li>
+                    <li>Developed cross-platform applications using Flutter.</li>
+                    <li>Built backend services with Java Spring Boot and MongoDB.</li>
+                    <li>Designed REST APIs and production database schemas.</li>
+                    <li>Delivered client-facing applications with full lifecycle ownership.</li>
                 </ul>
             </article>
         </div>
@@ -104,37 +124,135 @@
 
     <section id="projects" class="section shell">
         <p class="section-eyebrow">Projects</p>
-        <h2>AI and platform systems</h2>
+        <h2>AI and Infrastructure Platforms</h2>
         <div class="project-grid">
-            <article class="card">
+            <article class="project-card">
+                <div class="project-top">
+                    <div class="project-logo logo-compute">CI</div>
+                    <span class="project-type">Platform Engineering</span>
+                </div>
                 <h3>ComputeAI Platform</h3>
-                <p>ML lifecycle and deployment stack with MLflow tracking and Triton-based model serving.</p>
+                <p>End-to-end ML lifecycle stack with secure model deployment, enterprise-grade inference serving, and multi-user experiment governance.</p>
+                <p>Built to reduce model release friction from research to production with consistent observability and rollback-ready deployment patterns.</p>
+                <div class="project-tags"><span>MLflow</span><span>Triton</span><span>PostgreSQL</span></div>
             </article>
-            <article class="card">
+
+            <article class="project-card">
+                <div class="project-top">
+                    <div class="project-logo logo-raitha">RM</div>
+                    <span class="project-type">Applied AI</span>
+                </div>
                 <h3>RaithaMithra</h3>
-                <p>Agricultural assistant for crop prediction and disease analysis powered by ML models.</p>
+                <p>Agricultural AI assistant for crop prediction, disease detection, rainfall estimation, and seasonal advisory analytics.</p>
+                <p>Designed as a practical decision-support layer for farmers with interpretable outputs and scalable backend APIs.</p>
+                <div class="project-tags"><span>CNN</span><span>Forecasting</span><span>Flask</span></div>
             </article>
-            <article class="card">
-                <h3>GAN Text-to-Image</h3>
-                <p>Conditional GAN training pipeline using the Oxford-102 dataset.</p>
+
+            <article class="project-card">
+                <div class="project-top">
+                    <div class="project-logo logo-gan">TG</div>
+                    <span class="project-type">Generative AI</span>
+                </div>
+                <h3>GAN Text-to-Image System</h3>
+                <p>Implemented conditional GAN models in PyTorch for text-conditioned image generation workflows and tuned training stability.</p>
+                <p>Improved convergence quality through structured experimentation on loss balancing, augmentation, and checkpoint evaluation.</p>
+                <div class="project-tags"><span>PyTorch</span><span>GAN</span><span>Training</span></div>
             </article>
-            <article class="card">
+
+            <article class="project-card">
+                <div class="project-top">
+                    <div class="project-logo logo-yolo">Y5</div>
+                    <span class="project-type">Computer Vision</span>
+                </div>
                 <h3>YOLOv5 Detection API</h3>
-                <p>Real-time object detection service with Flask streaming and low-latency inference.</p>
+                <p>Real-time detection pipeline with low-latency streaming APIs and optimized inference throughput for live workloads.</p>
+                <p>Engineered for production readiness with resilient API behavior, frame handling controls, and predictable response timing.</p>
+                <div class="project-tags"><span>YOLOv5</span><span>Flask</span><span>Realtime</span></div>
+            </article>
+        </div>
+    </section>
+
+    <section id="research" class="section shell">
+        <p class="section-eyebrow">R&D</p>
+        <h2>Data Center R&D Systems</h2>
+        <div class="project-grid research-grid">
+            <article class="project-card">
+                <div class="project-top">
+                    <div class="project-logo logo-microvm">MV</div>
+                    <span class="project-type">Virtualization Research</span>
+                </div>
+                <h3>MicroVM Research and Lightweight Virtualization</h3>
+                <p>Evaluated MicroVM architectures for faster boot, workload isolation, and resource efficiency across Linux environments.</p>
+                <p>Benchmarked startup latency and footprint behavior to identify practical patterns for cloud-native control planes.</p>
+                <div class="project-tags"><span>MicroVM</span><span>Isolation</span><span>Linux</span></div>
+            </article>
+
+            <article class="project-card">
+                <div class="project-top">
+                    <div class="project-logo logo-serverless">SV</div>
+                    <span class="project-type">Platform Prototyping</span>
+                </div>
+                <h3>Serverless Architecture Prototyping</h3>
+                <p>Designed Linux-based serverless execution environments for rapid function deployment and secure isolation strategies.</p>
+                <p>Explored runtime lifecycle controls, invocation efficiency, and operational guardrails for multi-tenant execution models.</p>
+                <div class="project-tags"><span>Serverless</span><span>Runtime</span><span>Orchestration</span></div>
+            </article>
+
+            <article class="project-card">
+                <div class="project-top">
+                    <div class="project-logo logo-sdn">SD</div>
+                    <span class="project-type">Networking Systems</span>
+                </div>
+                <h3>SDN Networking for Virtual Machines with CMS</h3>
+                <p>Implemented centralized SDN policies, overlay routing, and dynamic network controls for VM workloads.</p>
+                <p>Built control-path workflows for policy updates and topology-aware routing with maintainable CMS integration boundaries.</p>
+                <div class="project-tags"><span>SDN</span><span>OVN</span><span>Overlay Networking</span></div>
+            </article>
+
+            <article class="project-card">
+                <div class="project-top">
+                    <div class="project-logo logo-ceph">CP</div>
+                    <span class="project-type">Storage Engineering</span>
+                </div>
+                <h3>Ceph Storage Integration with CMS</h3>
+                <p>Integrated distributed storage with CMS for scalable block and object lifecycle management in production-like setups.</p>
+                <p>Automated key storage operations to simplify provisioning reliability and reduce operator intervention overhead.</p>
+                <div class="project-tags"><span>Ceph</span><span>Distributed Storage</span><span>Automation</span></div>
+            </article>
+
+            <article class="project-card">
+                <div class="project-top">
+                    <div class="project-logo logo-automation">AU</div>
+                    <span class="project-type">Infra Automation</span>
+                </div>
+                <h3>Infrastructure Automation</h3>
+                <p>Automated deployment and service orchestration with shell scripts, systemd units, and repeatable operations pipelines.</p>
+                <p>Focused on reducing manual setup variance while improving service recoverability and deployment consistency.</p>
+                <div class="project-tags"><span>Systemd</span><span>Shell</span><span>Reliability</span></div>
             </article>
         </div>
     </section>
 
     <section id="skills" class="section shell">
         <p class="section-eyebrow">Skills</p>
-        <h2>Core technical areas</h2>
+        <h2>Core Technical Areas</h2>
         <div class="tags">
-            <span>Linux Networking</span>
-            <span>OVN / SDN</span>
-            <span>Virtualization</span>
+            <span>Linux System Administration</span>
+            <span>Shell Scripting</span>
+            <span>Ceph Storage</span>
+            <span>Petasan</span>
+            <span>Linux Virtualization</span>
+            <span>Network Virtualization</span>
+            <span>SDN / OVN</span>
             <span>Python</span>
-            <span>Java Spring Boot</span>
+            <span>Java</span>
             <span>Flutter</span>
+            <span>Machine Learning</span>
+            <span>Neural Networks</span>
+            <span>PyTorch</span>
+            <span>TensorFlow</span>
+            <span>AI Model Training</span>
+            <span>MLOps</span>
             <span>MLflow</span>
             <span>NVIDIA Triton</span>
             <span>Nginx</span>
@@ -146,18 +264,18 @@
 
     <section id="contact" class="section shell contact">
         <p class="section-eyebrow">Contact</p>
-        <h2>Open to engineering collaborations and product roles.</h2>
+        <h2>Open to engineering roles and collaborations.</h2>
         <div class="contact-grid">
-            <p><span>Email</span>your-email@example.com</p>
-            <p><span>GitHub</span>https://github.com/yourusername</p>
-            <p><span>LinkedIn</span>https://linkedin.com/in/yourprofile</p>
+            <p><span>Phone</span>6360389469</p>
+            <p><span>Email</span>madhusathwik555@gmail.com</p>
+            <p><span>LinkedIn</span>https://www.linkedin.com/in/madhu-kumar-g-b64963241/</p>
         </div>
     </section>
 </main>
 
 <footer class="shell footer">
     <p>&copy; 2026 MadhuKumar G</p>
-    <p class="footer-note">Built as a static site for GitHub Pages deployment.</p>
+    <p class="footer-note">Linux DC R&D and AI Engineer</p>
 </footer>
 
 </body>
