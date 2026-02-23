@@ -4,41 +4,88 @@
     box-sizing: border-box;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 body {
-    font-family: 'Segoe UI', sans-serif;
+    font-family: 'Inter', sans-serif;
     background-color: #0d1117;
     color: #e6edf3;
-    line-height: 1.6;
 }
 
-.container {
-    width: 85%;
-    margin: auto;
-    padding: 60px 0;
+/* NAVBAR */
+
+nav {
+    position: fixed;
+    width: 100%;
+    background: rgba(13,17,23,0.9);
+    backdrop-filter: blur(10px);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 8%;
+    z-index: 1000;
 }
+
+nav .logo {
+    font-weight: 700;
+    font-size: 20px;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+}
+
+nav ul li {
+    margin-left: 30px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #e6edf3;
+    transition: 0.3s;
+}
+
+nav ul li a:hover {
+    color: #00adb5;
+}
+
+/* HERO */
 
 header {
-    background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     text-align: center;
-    padding: 120px 0;
+    background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
+    padding: 0 20px;
 }
 
-header h1 {
+.hero-content h1 {
     font-size: 48px;
-    margin-bottom: 20px;
+    margin-bottom: 10px;
 }
 
-.subtitle {
-    font-size: 20px;
-    color: #9ca3af;
+.hero-content h2 {
+    font-weight: 400;
+    margin-bottom: 20px;
+    color: #00adb5;
+}
+
+.hero-content p {
+    max-width: 600px;
+    margin: auto;
     margin-bottom: 30px;
+    color: #c9d1d9;
 }
 
 .btn {
-    display: inline-block;
     padding: 12px 30px;
     background: #00adb5;
-    color: #fff;
+    color: white;
     text-decoration: none;
     border-radius: 6px;
     transition: 0.3s;
@@ -48,28 +95,38 @@ header h1 {
     background: #019ca3;
 }
 
-h2 {
-    margin-bottom: 30px;
-    font-size: 32px;
-    border-left: 5px solid #00adb5;
-    padding-left: 15px;
+/* SECTIONS */
+
+section {
+    padding: 100px 10%;
 }
+
+.section-title {
+    font-size: 32px;
+    margin-bottom: 20px;
+    border-left: 4px solid #00adb5;
+    padding-left: 12px;
+}
+
+.section-desc {
+    max-width: 800px;
+    color: #9ca3af;
+}
+
+/* CARDS */
 
 .card {
     background: #161b22;
     padding: 25px;
-    margin-bottom: 25px;
-    border-radius: 8px;
-    transition: transform 0.3s;
+    border-radius: 10px;
+    margin-top: 25px;
+    transition: 0.3s;
+    border: 1px solid #21262d;
 }
 
 .card:hover {
     transform: translateY(-5px);
-}
-
-.company {
-    color: #9ca3af;
-    margin-bottom: 15px;
+    border-color: #00adb5;
 }
 
 .grid {
@@ -78,15 +135,10 @@ h2 {
     gap: 20px;
 }
 
-.skills-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-    gap: 20px;
-}
+/* FOOTER */
 
 footer {
     text-align: center;
     padding: 30px;
     background: #161b22;
-    margin-top: 40px;
 }
