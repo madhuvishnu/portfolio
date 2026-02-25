@@ -306,6 +306,8 @@
 <!-- ================= AI CHATBOT ================= -->
 
 <style>
+/* ================= CHAT TOGGLE BUTTON ================= */
+
 #ai-chat-toggle {
     position: fixed;
     bottom: 22px;
@@ -323,9 +325,12 @@
     z-index: 9999;
     transition: transform 0.2s ease;
 }
+
 #ai-chat-toggle:hover {
     transform: scale(1.08);
 }
+
+/* ================= CHAT WINDOW ================= */
 
 #ai-chat-window {
     position: fixed;
@@ -333,6 +338,7 @@
     right: 22px;
     width: 380px;
     height: 520px;
+    max-height: calc(100vh - 120px); /* prevents covering header */
     background: linear-gradient(165deg, var(--surface), var(--surface-2));
     border: 1px solid var(--line);
     border-radius: var(--radius);
@@ -344,11 +350,15 @@
     transition: all 0.3s ease;
 }
 
-/* Expanded Mode */
+/* ================= EXPANDED MODE ================= */
+
 #ai-chat-window.expanded {
-    width: 600px;
+    width: 650px;
     height: 80vh;
+    max-height: calc(100vh - 100px);
 }
+
+/* ================= HEADER ================= */
 
 #ai-chat-header {
     padding: 14px;
@@ -363,13 +373,13 @@
 .chat-controls {
     display: flex;
     gap: 12px;
-    align-items: center;
 }
 
 .control-btn {
     cursor: pointer;
-    font-weight: bold;
 }
+
+/* ================= MESSAGES ================= */
 
 #ai-chat-messages {
     flex: 1;
@@ -378,7 +388,8 @@
     font-size: 14px;
 }
 
-.ai-msg, .user-msg {
+.ai-msg,
+.user-msg {
     margin-bottom: 10px;
     padding: 10px 12px;
     border-radius: 12px;
@@ -397,6 +408,8 @@
     color: #04131f;
     margin-left: auto;
 }
+
+/* ================= INPUT ================= */
 
 #ai-chat-input {
     display: flex;
@@ -420,22 +433,30 @@
     font-weight: 600;
 }
 
-/* Mobile Responsive */
-@media (max-width: 600px) {
+/* ================= MOBILE ================= */
+
+@media (max-width: 768px) {
+
     #ai-chat-window {
-        width: 100%;
-        height: 100vh;
-        bottom: 0;
-        right: 0;
-        border-radius: 0;
+        width: calc(100% - 20px);
+        height: 70vh;
+        bottom: 90px;
+        right: 10px;
+        left: 10px;
+        border-radius: var(--radius);
     }
 
     #ai-chat-window.expanded {
         width: 100%;
         height: 100vh;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        border-radius: 0;
     }
 }
 </style>
+
 <button id="ai-chat-toggle">🤖</button>
 
 <div id="ai-chat-window">
@@ -465,6 +486,7 @@ toggleBtn.onclick = () => {
         chatWindow.style.display = "none";
     } else {
         chatWindow.style.display = "flex";
+        chatWindow.classList.remove("expanded");
         if (!messagesDiv.innerHTML) {
             addAIMessage("Hello 👋 I'm MadhuKumar G's AI assistant. You can ask me about his experience, research, skills, or projects.");
         }
