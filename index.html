@@ -30,6 +30,7 @@
         </a>
         <ul class="nav-links">
             <li><a href="#about">About</a></li>
+            <li><a href="#education">Education</a></li>
             <li><a href="#experience">Experience</a></li>
             <li><a href="#projects">Projects</a></li>
             <li><a href="#research">R&D</a></li>
@@ -91,7 +92,25 @@
             bridging research engineering with real-world deployment.
         </p>
     </section>
+    <section id="education" class="section shell">
+    <p class="section-eyebrow">Education</p>
+    <h2>Academic Background</h2>
 
+    <div class="timeline">
+        <article class="card">
+            <div class="card-head">
+                <h3>BSc Honours in Data Science and Artificial Intelligence</h3>
+                <span>2020 – 2024</span>
+            </div>
+            <p class="card-subtitle">Sarada Vilas College, Mysore</p>
+            <ul>
+                <li>Focused on Machine Learning, Neural Networks, and Data Analytics.</li>
+                <li>Worked on GAN architectures, deep learning systems, and applied AI solutions.</li>
+                <li>Built academic and production-oriented AI projects.</li>
+            </ul>
+        </article>
+    </div>
+</section>
     <section id="experience" class="section shell">
         <p class="section-eyebrow">Experience</p>
         <h2>Professional Work</h2>
@@ -284,5 +303,203 @@
     <p class="footer-note">Linux DC R&D and AI Engineer</p>
 </footer>
 
+<!-- ================= AI CHATBOT ================= -->
+
+<style>
+#ai-chat-toggle {
+    position: fixed;
+    bottom: 22px;
+    right: 22px;
+    width: 58px;
+    height: 58px;
+    border-radius: 50%;
+    border: none;
+    cursor: pointer;
+    background: linear-gradient(135deg, var(--brand), var(--brand-2));
+    color: #04131f;
+    font-size: 22px;
+    font-weight: 700;
+    box-shadow: 0 12px 30px rgba(65, 211, 189, 0.35);
+    z-index: 9999;
+    transition: transform 0.2s ease;
+}
+#ai-chat-toggle:hover {
+    transform: scale(1.08);
+}
+
+#ai-chat-window {
+    position: fixed;
+    bottom: 95px;
+    right: 22px;
+    width: 360px;
+    max-height: 520px;
+    background: linear-gradient(165deg, var(--surface), var(--surface-2));
+    border: 1px solid var(--line);
+    border-radius: var(--radius);
+    box-shadow: var(--shadow);
+    display: none;
+    flex-direction: column;
+    overflow: hidden;
+    z-index: 9999;
+    animation: rise 250ms ease;
+}
+
+#ai-chat-header {
+    padding: 14px;
+    background: linear-gradient(135deg, var(--brand), var(--brand-2));
+    color: #071522;
+    font-weight: 700;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#ai-chat-close {
+    cursor: pointer;
+    font-weight: bold;
+}
+
+#ai-chat-messages {
+    flex: 1;
+    padding: 14px;
+    overflow-y: auto;
+    font-size: 14px;
+}
+
+.ai-msg, .user-msg {
+    margin-bottom: 10px;
+    padding: 10px 12px;
+    border-radius: 12px;
+    max-width: 85%;
+    line-height: 1.4;
+}
+
+.ai-msg {
+    background: rgba(255,255,255,0.05);
+    border: 1px solid var(--line);
+}
+
+.user-msg {
+    background: linear-gradient(135deg, var(--brand), var(--brand-2));
+    color: #04131f;
+    margin-left: auto;
+}
+
+#ai-chat-input {
+    display: flex;
+    border-top: 1px solid var(--line);
+}
+
+#ai-chat-input input {
+    flex: 1;
+    padding: 12px;
+    background: transparent;
+    border: none;
+    color: var(--text);
+    outline: none;
+}
+
+#ai-chat-input button {
+    padding: 0 18px;
+    background: var(--brand);
+    border: none;
+    cursor: pointer;
+    font-weight: 600;
+}
+
+.typing-indicator {
+    font-style: italic;
+    color: var(--muted);
+    animation: blink 1s infinite;
+}
+
+@keyframes blink {
+    50% { opacity: 0.4; }
+}
+</style>
+
+<button id="ai-chat-toggle">🤖</button>
+
+<div id="ai-chat-window">
+    <div id="ai-chat-header">
+        AI Assistant
+        <span id="ai-chat-close">✕</span>
+    </div>
+    <div id="ai-chat-messages"></div>
+    <div id="ai-chat-input">
+        <input type="text" id="ai-input" placeholder="Ask about Madhu..." />
+        <button onclick="sendAIMessage()">Send</button>
+    </div>
+</div>
+
+<script>
+const toggleBtn = document.getElementById("ai-chat-toggle");
+const chatWindow = document.getElementById("ai-chat-window");
+const closeBtn = document.getElementById("ai-chat-close");
+const messagesDiv = document.getElementById("ai-chat-messages");
+
+toggleBtn.onclick = () => {
+    if (chatWindow.style.display === "flex") {
+        chatWindow.style.display = "none";
+    } else {
+        chatWindow.style.display = "flex";
+        if (!messagesDiv.innerHTML) {
+            addAIMessage("Hello 👋 I'm MadhuKumar G's AI assistant. You can ask me about his experience, research, skills, or projects.");
+        }
+    }
+};
+
+closeBtn.onclick = () => {
+    chatWindow.style.display = "none";
+};
+
+function addUserMessage(text) {
+    const div = document.createElement("div");
+    div.className = "user-msg";
+    div.innerText = text;
+    messagesDiv.appendChild(div);
+    messagesDiv.scrollTop = messagesDiv.scrollHeight;
+}
+
+function addAIMessage(text) {
+    const div = document.createElement("div");
+    div.className = "ai-msg";
+    div.innerText = text;
+    messagesDiv.appendChild(div);
+    messagesDiv.scrollTop = messagesDiv.scrollHeight;
+}
+
+async function sendAIMessage() {
+    const inputField = document.getElementById("ai-input");
+    const userText = inputField.value.trim();
+    if (!userText) return;
+
+    addUserMessage(userText);
+    inputField.value = "";
+
+    const typingDiv = document.createElement("div");
+    typingDiv.className = "ai-msg typing-indicator";
+    typingDiv.innerText = "Thinking...";
+    messagesDiv.appendChild(typingDiv);
+    messagesDiv.scrollTop = messagesDiv.scrollHeight;
+
+    try {
+        const response = await fetch("https://portfolio-ai.madhusathwik555.workers.dev/", {
+            method: "POST",
+            headers: { "Content-Type": "application/json" },
+            body: JSON.stringify({ message: userText })
+        });
+
+        const data = await response.json();
+
+        typingDiv.remove();
+        addAIMessage(data.reply);
+
+    } catch (error) {
+        typingDiv.remove();
+        addAIMessage("Error connecting to AI service.");
+    }
+}
+</script>
 </body>
 </html>
