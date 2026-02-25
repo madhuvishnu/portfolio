@@ -331,8 +331,8 @@
     position: fixed;
     bottom: 95px;
     right: 22px;
-    width: 360px;
-    max-height: 520px;
+    width: 380px;
+    height: 520px;
     background: linear-gradient(165deg, var(--surface), var(--surface-2));
     border: 1px solid var(--line);
     border-radius: var(--radius);
@@ -341,7 +341,13 @@
     flex-direction: column;
     overflow: hidden;
     z-index: 9999;
-    animation: rise 250ms ease;
+    transition: all 0.3s ease;
+}
+
+/* Expanded Mode */
+#ai-chat-window.expanded {
+    width: 600px;
+    height: 80vh;
 }
 
 #ai-chat-header {
@@ -354,7 +360,13 @@
     align-items: center;
 }
 
-#ai-chat-close {
+.chat-controls {
+    display: flex;
+    gap: 12px;
+    align-items: center;
+}
+
+.control-btn {
     cursor: pointer;
     font-weight: bold;
 }
@@ -372,6 +384,7 @@
     border-radius: 12px;
     max-width: 85%;
     line-height: 1.4;
+    word-wrap: break-word;
 }
 
 .ai-msg {
@@ -407,28 +420,37 @@
     font-weight: 600;
 }
 
-.typing-indicator {
-    font-style: italic;
-    color: var(--muted);
-    animation: blink 1s infinite;
-}
+/* Mobile Responsive */
+@media (max-width: 600px) {
+    #ai-chat-window {
+        width: 100%;
+        height: 100vh;
+        bottom: 0;
+        right: 0;
+        border-radius: 0;
+    }
 
-@keyframes blink {
-    50% { opacity: 0.4; }
+    #ai-chat-window.expanded {
+        width: 100%;
+        height: 100vh;
+    }
 }
 </style>
-
 <button id="ai-chat-toggle">🤖</button>
 
 <div id="ai-chat-window">
     <div id="ai-chat-header">
-        AI Assistant
-        <span id="ai-chat-close">✕</span>
+    AI Assistant
+    <div class="chat-controls">
+        <span id="ai-chat-expand" class="control-btn">⬜</span>
+        <span id="ai-chat-close" class="control-btn">✕</span>
     </div>
+</div>
     <div id="ai-chat-messages"></div>
     <div id="ai-chat-input">
         <input type="text" id="ai-input" placeholder="Ask about Madhu..." />
         <button onclick="sendAIMessage()">Send</button>
+        
     </div>
 </div>
 
@@ -500,6 +522,18 @@ async function sendAIMessage() {
         addAIMessage("Error connecting to AI service.");
     }
 }
+
+document.getElementById("ai-input").addEventListener("keypress", function(e) {
+    if (e.key === "Enter") {
+        sendAIMessage();
+    }
+});
+
+const expandBtn = document.getElementById("ai-chat-expand");
+
+expandBtn.onclick = () => {
+    chatWindow.classList.toggle("expanded");
+};
 </script>
 </body>
 </html>
