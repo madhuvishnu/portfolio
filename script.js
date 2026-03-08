@@ -1,4 +1,6 @@
-﻿const header = document.getElementById("site-header");
+const header = document.getElementById("site-header");
+const nav = document.querySelector(".nav");
+const navToggle = document.querySelector(".nav-toggle");
 const navLinks = Array.from(document.querySelectorAll(".nav-links a"));
 
 const chatToggleBtn = document.getElementById("ai-chat-toggle");
@@ -63,6 +65,8 @@ function setupSmoothAnchorNavigation() {
             event.preventDefault();
             history.replaceState(null, "", hash);
             scrollToAnchor(hash);
+            nav?.classList.remove("menu-open");
+            navToggle?.setAttribute("aria-expanded", "false");
         });
     });
 
@@ -71,6 +75,26 @@ function setupSmoothAnchorNavigation() {
         event.preventDefault();
         history.replaceState(null, "", "#top");
         scrollToAnchor("#top");
+        nav?.classList.remove("menu-open");
+        navToggle?.setAttribute("aria-expanded", "false");
+    });
+}
+
+function setupMobileNavigation() {
+    if (!nav || !navToggle) {
+        return;
+    }
+
+    navToggle.addEventListener("click", () => {
+        const isOpen = nav.classList.toggle("menu-open");
+        navToggle.setAttribute("aria-expanded", String(isOpen));
+    });
+
+    window.addEventListener("resize", () => {
+        if (window.innerWidth > 900) {
+            nav.classList.remove("menu-open");
+            navToggle.setAttribute("aria-expanded", "false");
+        }
     });
 }
 
@@ -281,5 +305,9 @@ function setupChat() {
 }
 
 setupRevealAnimations();
+setupMobileNavigation();
 setupSmoothAnchorNavigation();
 setupChat();
+
+
+
