@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8" />
@@ -22,11 +22,11 @@
 <body>
 <div class="page-bg" aria-hidden="true"></div>
 
-<header class="site-header">
+<header class="site-header" id="site-header">
     <nav class="nav shell">
         <a href="#top" class="logo">
             <span class="logo-mark" aria-hidden="true">MG</span>
-            <span>MadhuKumar G</span>
+            <span class="logo-text">MadhuKumar G</span>
         </a>
         <ul class="nav-links">
             <li><a href="#about">About</a></li>
@@ -41,7 +41,7 @@
 </header>
 
 <main id="top">
-    <section class="hero shell">
+    <section class="hero shell" id="hero">
         <div class="hero-layout">
             <div>
                 <p class="hero-kicker">Linux Data Center R&D | AI Engineer</p>
@@ -58,10 +58,26 @@
             </div>
 
             <aside class="profile-card">
-                <img src="assets/profile.jpg" alt="Photo of MadhuKumar G" class="profile-photo" />
+                <a
+                    class="profile-photo-link"
+                    href="https://www.linkedin.com/in/madhu-kumar-g-b64963241/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    aria-label="Open MadhuKumar G LinkedIn profile"
+                >
+                    <img src="assets/profile.jpg" alt="Photo of MadhuKumar G" class="profile-photo" />
+                    <span class="profile-photo-overlay">View LinkedIn</span>
+                </a>
                 <p class="profile-name">MadhuKumar G</p>
                 <p class="profile-role">Linux DC R&D and AI Engineer</p>
-                
+                <a
+                    class="profile-linkedin-btn"
+                    href="https://www.linkedin.com/in/madhu-kumar-g-b64963241/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                >
+                    Connect on LinkedIn
+                </a>
             </aside>
         </div>
 
@@ -92,25 +108,26 @@
             bridging research engineering with real-world deployment.
         </p>
     </section>
-    <section id="education" class="section shell">
-    <p class="section-eyebrow">Education</p>
-    <h2>Academic Background</h2>
 
-    <div class="timeline">
-        <article class="card">
-            <div class="card-head">
-                <h3>BSc Honours in Data Science and Artificial Intelligence</h3>
-                <span>2020 – 2024</span>
-            </div>
-            <p class="card-subtitle">Sarada Vilas College, Mysore</p>
-            <ul>
-                <li>Focused on Machine Learning, Neural Networks, and Data Analytics.</li>
-                <li>Worked on GAN architectures, deep learning systems, and applied AI solutions.</li>
-                <li>Built academic and production-oriented AI projects.</li>
-            </ul>
-        </article>
-    </div>
-</section>
+    <section id="education" class="section shell">
+        <p class="section-eyebrow">Education</p>
+        <h2>Academic Background</h2>
+        <div class="timeline">
+            <article class="card">
+                <div class="card-head">
+                    <h3>BSc Honours in Data Science and Artificial Intelligence</h3>
+                    <span>2020 - 2024</span>
+                </div>
+                <p class="card-subtitle">Sarada Vilas College, Mysore</p>
+                <ul>
+                    <li>Focused on Machine Learning, Neural Networks, and Data Analytics.</li>
+                    <li>Worked on GAN architectures, deep learning systems, and applied AI solutions.</li>
+                    <li>Built academic and production-oriented AI projects.</li>
+                </ul>
+            </article>
+        </div>
+    </section>
+
     <section id="experience" class="section shell">
         <p class="section-eyebrow">Experience</p>
         <h2>Professional Work</h2>
@@ -153,7 +170,7 @@
         <div class="project-grid">
             <article class="project-card">
                 <div class="project-top">
-                    <div class="project-logo logo-compute">CI</div>
+                    <div class="project-logo logo-compute"><span class="logo-inner">CI</span></div>
                     <span class="project-type">Platform Engineering</span>
                 </div>
                 <h3>ComputeAI Platform</h3>
@@ -164,7 +181,7 @@
 
             <article class="project-card">
                 <div class="project-top">
-                    <div class="project-logo logo-raitha">RM</div>
+                    <div class="project-logo logo-raitha"><span class="logo-inner">RM</span></div>
                     <span class="project-type">Applied AI</span>
                 </div>
                 <h3>RaithaMithra</h3>
@@ -175,7 +192,7 @@
 
             <article class="project-card">
                 <div class="project-top">
-                    <div class="project-logo logo-gan">TG</div>
+                    <div class="project-logo logo-gan"><span class="logo-inner">TG</span></div>
                     <span class="project-type">Generative AI</span>
                 </div>
                 <h3>GAN Text-to-Image System</h3>
@@ -186,7 +203,7 @@
 
             <article class="project-card">
                 <div class="project-top">
-                    <div class="project-logo logo-yolo">Y5</div>
+                    <div class="project-logo logo-yolo"><span class="logo-inner">Y5</span></div>
                     <span class="project-type">Computer Vision</span>
                 </div>
                 <h3>YOLOv5 Detection API</h3>
@@ -203,7 +220,7 @@
         <div class="project-grid research-grid">
             <article class="project-card">
                 <div class="project-top">
-                    <div class="project-logo logo-microvm">MV</div>
+                    <div class="project-logo logo-microvm"><span class="logo-inner">MV</span></div>
                     <span class="project-type">Virtualization Research</span>
                 </div>
                 <h3>MicroVM Research and Lightweight Virtualization</h3>
@@ -214,7 +231,7 @@
 
             <article class="project-card">
                 <div class="project-top">
-                    <div class="project-logo logo-serverless">SV</div>
+                    <div class="project-logo logo-serverless"><span class="logo-inner">SV</span></div>
                     <span class="project-type">Platform Prototyping</span>
                 </div>
                 <h3>Serverless Architecture Prototyping</h3>
@@ -225,7 +242,7 @@
 
             <article class="project-card">
                 <div class="project-top">
-                    <div class="project-logo logo-sdn">SD</div>
+                    <div class="project-logo logo-sdn"><span class="logo-inner">SD</span></div>
                     <span class="project-type">Networking Systems</span>
                 </div>
                 <h3>SDN Networking for Virtual Machines with CMS</h3>
@@ -236,7 +253,7 @@
 
             <article class="project-card">
                 <div class="project-top">
-                    <div class="project-logo logo-ceph">CP</div>
+                    <div class="project-logo logo-ceph"><span class="logo-inner">CP</span></div>
                     <span class="project-type">Storage Engineering</span>
                 </div>
                 <h3>Ceph Storage Integration with CMS</h3>
@@ -247,7 +264,7 @@
 
             <article class="project-card">
                 <div class="project-top">
-                    <div class="project-logo logo-automation">AU</div>
+                    <div class="project-logo logo-automation"><span class="logo-inner">AU</span></div>
                     <span class="project-type">Infra Automation</span>
                 </div>
                 <h3>Infrastructure Automation</h3>
@@ -291,30 +308,22 @@
         <p class="section-eyebrow">Contact</p>
         <h2>Open to engineering roles and collaborations.</h2>
         <div class="contact-grid">
-<p>
-  <span>Phone</span>
-  <a href="tel:+916360389469" style="color: aliceblue;">6360389469</a>
-</p>
-
-<p>
-  <span>WhatsApp</span>
-  <a href="https://wa.me/916360389469" target="_blank" style="color: aliceblue;">6360389469</a>
-</p>
-
-<p>
-  <span>Email</span>
-  <a href="mailto:madhusathwik555@gmail.com" style="color: aliceblue;">
-    madhusathwik555@gmail.com
-  </a>
-</p>
-
-<p>
-  <span>LinkedIn</span>
-  <a href="https://www.linkedin.com/in/madhu-kumar-g-b64963241/" target="_blank" style="color: aliceblue;">
-    https://www.linkedin.com/in/madhu-kumar-g-b64963241/
-  </a>
-
-</p>
+            <p>
+                <span>Phone</span>
+                <a href="tel:+916360389469">+91 63603 89469</a>
+            </p>
+            <p>
+                <span>WhatsApp</span>
+                <a href="https://wa.me/916360389469" target="_blank" rel="noopener noreferrer">Chat on WhatsApp</a>
+            </p>
+            <p>
+                <span>Email</span>
+                <a href="mailto:madhusathwik555@gmail.com">madhusathwik555@gmail.com</a>
+            </p>
+            <p>
+                <span>LinkedIn</span>
+                <a href="https://www.linkedin.com/in/madhu-kumar-g-b64963241/" target="_blank" rel="noopener noreferrer">linkedin.com/in/madhu-kumar-g-b64963241</a>
+            </p>
         </div>
     </section>
 </main>
@@ -324,259 +333,42 @@
     <p class="footer-note">Linux DC R&D and AI Engineer</p>
 </footer>
 
-<!-- ================= AI CHATBOT ================= -->
+<button id="ai-chat-toggle" type="button" aria-label="Open AI assistant">
+    <span class="chat-toggle-pulse" aria-hidden="true"></span>
+    <span class="chat-toggle-icon" aria-hidden="true">
+        <svg viewBox="0 0 24 24" role="img" aria-hidden="true">
+            <path d="M12 2a2 2 0 0 1 2 2v1h2.5A3.5 3.5 0 0 1 20 8.5v6A3.5 3.5 0 0 1 16.5 18H15v2a1 1 0 0 1-1.62.78L10.6 18H7.5A3.5 3.5 0 0 1 4 14.5v-6A3.5 3.5 0 0 1 7.5 5H10V4a2 2 0 0 1 2-2Zm-2 8.25a1.25 1.25 0 1 0 0 2.5 1.25 1.25 0 0 0 0-2.5Zm4 0a1.25 1.25 0 1 0 0 2.5 1.25 1.25 0 0 0 0-2.5Z" />
+        </svg>
+    </span>
+    <span class="chat-toggle-text">AI Assistant</span>
+</button>
 
-<style>
-/* ================= CHAT TOGGLE BUTTON ================= */
+<section id="ai-chat-window" aria-label="AI assistant" aria-hidden="true">
+    <header id="ai-chat-header">
+        <div>
+            <p class="chat-title">AI Assistant</p>
+            <p class="chat-status">Online and ready to help</p>
+        </div>
+        <div class="chat-controls">
+            <button id="ai-chat-expand" class="control-btn" type="button" aria-label="Expand chat">Expand</button>
+            <button id="ai-chat-close" class="control-btn" type="button" aria-label="Close chat">Close</button>
+        </div>
+    </header>
 
-#ai-chat-toggle {
-    position: fixed;
-    bottom: 22px;
-    right: 22px;
-    width: 58px;
-    height: 58px;
-    border-radius: 50%;
-    border: none;
-    cursor: pointer;
-    background: linear-gradient(135deg, var(--brand), var(--brand-2));
-    color: #04131f;
-    font-size: 22px;
-    font-weight: 700;
-    box-shadow: 0 12px 30px rgba(65, 211, 189, 0.35);
-    z-index: 9999;
-    transition: transform 0.2s ease;
-}
-
-#ai-chat-toggle:hover {
-    transform: scale(1.08);
-}
-
-/* ================= CHAT WINDOW ================= */
-
-#ai-chat-window {
-    position: fixed;
-    bottom: 95px;
-    right: 22px;
-    width: 380px;
-    height: 520px;
-    max-height: calc(100vh - 120px); /* prevents covering header */
-    background: linear-gradient(165deg, var(--surface), var(--surface-2));
-    border: 1px solid var(--line);
-    border-radius: var(--radius);
-    box-shadow: var(--shadow);
-    display: none;
-    flex-direction: column;
-    overflow: hidden;
-    z-index: 9999;
-    transition: all 0.3s ease;
-}
-
-/* ================= EXPANDED MODE ================= */
-
-#ai-chat-window.expanded {
-    width: 650px;
-    height: 80vh;
-    max-height: calc(100vh - 100px);
-}
-
-/* ================= HEADER ================= */
-
-#ai-chat-header {
-    padding: 14px;
-    background: linear-gradient(135deg, var(--brand), var(--brand-2));
-    color: #071522;
-    font-weight: 700;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
-.chat-controls {
-    display: flex;
-    gap: 12px;
-}
-
-.control-btn {
-    cursor: pointer;
-}
-
-/* ================= MESSAGES ================= */
-
-#ai-chat-messages {
-    flex: 1;
-    padding: 14px;
-    overflow-y: auto;
-    font-size: 14px;
-}
-
-.ai-msg,
-.user-msg {
-    margin-bottom: 10px;
-    padding: 10px 12px;
-    border-radius: 12px;
-    max-width: 85%;
-    line-height: 1.4;
-    word-wrap: break-word;
-}
-
-.ai-msg {
-    background: rgba(255,255,255,0.05);
-    border: 1px solid var(--line);
-}
-
-.user-msg {
-    background: linear-gradient(135deg, var(--brand), var(--brand-2));
-    color: #04131f;
-    margin-left: auto;
-}
-
-/* ================= INPUT ================= */
-
-#ai-chat-input {
-    display: flex;
-    border-top: 1px solid var(--line);
-}
-
-#ai-chat-input input {
-    flex: 1;
-    padding: 12px;
-    background: transparent;
-    border: none;
-    color: var(--text);
-    outline: none;
-}
-
-#ai-chat-input button {
-    padding: 0 18px;
-    background: var(--brand);
-    border: none;
-    cursor: pointer;
-    font-weight: 600;
-}
-
-/* ================= MOBILE ================= */
-
-@media (max-width: 768px) {
-
-    #ai-chat-window {
-        width: calc(100% - 20px);
-        height: 70vh;
-        bottom: 90px;
-        right: 10px;
-        left: 10px;
-        border-radius: var(--radius);
-    }
-
-    #ai-chat-window.expanded {
-        width: 100%;
-        height: 100vh;
-        bottom: 0;
-        left: 0;
-        right: 0;
-        border-radius: 0;
-    }
-}
-</style>
-
-<button id="ai-chat-toggle">🤖</button>
-
-<div id="ai-chat-window">
-    <div id="ai-chat-header">
-    AI Assistant
-    <div class="chat-controls">
-        <span id="ai-chat-expand" class="control-btn">⬜</span>
-        <span id="ai-chat-close" class="control-btn">✕</span>
+    <div class="quick-prompts" id="quick-prompts">
+        <button type="button" class="prompt-chip" data-prompt="Summarize Madhu's current role.">Current role</button>
+        <button type="button" class="prompt-chip" data-prompt="List the top projects in this portfolio.">Top projects</button>
+        <button type="button" class="prompt-chip" data-prompt="Which skills are strongest for AI infrastructure?">AI infra skills</button>
     </div>
-</div>
-    <div id="ai-chat-messages"></div>
-    <div id="ai-chat-input">
-        <input type="text" id="ai-input" placeholder="Ask about Madhu..." />
-        <button onclick="sendAIMessage()">Send</button>
-        
-    </div>
-</div>
 
-<script>
-const toggleBtn = document.getElementById("ai-chat-toggle");
-const chatWindow = document.getElementById("ai-chat-window");
-const closeBtn = document.getElementById("ai-chat-close");
-const messagesDiv = document.getElementById("ai-chat-messages");
+    <div id="ai-chat-messages" aria-live="polite"></div>
 
-toggleBtn.onclick = () => {
-    if (chatWindow.style.display === "flex") {
-        chatWindow.style.display = "none";
-    } else {
-        chatWindow.style.display = "flex";
-        chatWindow.classList.remove("expanded");
-        if (!messagesDiv.innerHTML) {
-            addAIMessage("Hello 👋 I'm MadhuKumar G's AI assistant. You can ask me about his experience, research, skills, or projects.");
-        }
-    }
-};
+    <form id="ai-chat-input" novalidate>
+        <input type="text" id="ai-input" placeholder="Ask about Madhu's experience..." autocomplete="off" />
+        <button type="submit" id="ai-send-btn">Send</button>
+    </form>
+</section>
 
-closeBtn.onclick = () => {
-    chatWindow.style.display = "none";
-};
-
-function addUserMessage(text) {
-    const div = document.createElement("div");
-    div.className = "user-msg";
-    div.innerText = text;
-    messagesDiv.appendChild(div);
-    messagesDiv.scrollTop = messagesDiv.scrollHeight;
-}
-
-function addAIMessage(text) {
-    const div = document.createElement("div");
-    div.className = "ai-msg";
-    div.innerText = text;
-    messagesDiv.appendChild(div);
-    messagesDiv.scrollTop = messagesDiv.scrollHeight;
-}
-
-async function sendAIMessage() {
-    const inputField = document.getElementById("ai-input");
-    const userText = inputField.value.trim();
-    if (!userText) return;
-
-    addUserMessage(userText);
-    inputField.value = "";
-
-    const typingDiv = document.createElement("div");
-    typingDiv.className = "ai-msg typing-indicator";
-    typingDiv.innerText = "Thinking...";
-    messagesDiv.appendChild(typingDiv);
-    messagesDiv.scrollTop = messagesDiv.scrollHeight;
-
-    try {
-        const response = await fetch("https://portfolio-ai.madhukumarg.workers.dev/", {
-            method: "POST",
-            headers: { "Content-Type": "application/json" },
-            body: JSON.stringify({ message: userText })
-        });
-
-        const data = await response.json();
-
-        typingDiv.remove();
-        addAIMessage(data.reply);
-
-    } catch (error) {
-        typingDiv.remove();
-        addAIMessage("Error connecting to AI service.");
-    }
-}
-
-document.getElementById("ai-input").addEventListener("keypress", function(e) {
-    if (e.key === "Enter") {
-        sendAIMessage();
-    }
-});
-
-const expandBtn = document.getElementById("ai-chat-expand");
-
-expandBtn.onclick = () => {
-    chatWindow.classList.toggle("expanded");
-};
-</script>
+<script src="script.js"></script>
 </body>
 </html>
