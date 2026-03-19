@@ -892,3 +892,21 @@ body:hover .konami-hint { opacity: 1; }
         transition-duration: 0.001ms !important;
     }
 }
+
+.mini-terminal {
+  margin-top: 2rem;
+  background: #0d1117;
+  color: #c9d1d9;
+  border-radius: 12px;
+  padding: 1.4rem;
+  border: 1px solid #21262d;
+  font-family: var(--font-mono);
+  font-size: 0.82rem;
+  box-shadow: var(--shadow-md);
+}
+
+.mini-terminal pre {
+  margin: 0;
+  white-space: pre-wrap;
+  line-height: 1.7;
+}
