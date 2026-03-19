@@ -1,367 +1,429 @@
 ﻿<!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>MadhuKumar G | Linux Data Center R&D | AI Engineer</title>
-    <meta
-        name="description"
-        content="Portfolio of MadhuKumar G - Linux Data Center R&D Engineer and AI Engineer focused on high-performance infrastructure and production machine learning systems."
-    />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-        href="https://fonts.googleapis.com/css2?family=Sora:wght@400;500;600;700;800&family=IBM+Plex+Mono:wght@400;500&display=swap"
-        rel="stylesheet"
-    />
-    <link rel="icon" type="image/svg+xml" href="assets/favicon.svg?v=1" />
-    <link rel="shortcut icon" href="assets/favicon.svg?v=1" />
-    <link rel="apple-touch-icon" href="assets/favicon.svg?v=1" />
-    <link rel="stylesheet" href="style.css" />
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>MadhuKumar G — Linux DC R&D · AI Engineer</title>
+  <meta name="description" content="Portfolio of MadhuKumar G — Linux Data Center R&D Engineer and AI Engineer focused on high-performance infrastructure and production machine learning systems." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Outfit:wght@300;400;500;600&family=DM+Mono:wght@400;500&display=swap" rel="stylesheet" />
+  <link rel="icon" type="image/svg+xml" href="assets/favicon.svg?v=1" />
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-<div class="page-bg" aria-hidden="true"></div>
 
+<div class="grain" aria-hidden="true"></div>
+<div class="cursor-dot" id="cursor-dot" aria-hidden="true"></div>
+
+<!-- HEADER -->
 <header class="site-header" id="site-header">
-    <nav class="nav shell">
-        <a href="#top" class="logo">
-            <span class="logo-text">MadhuKumar G</span>
-        </a>
-        <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="primary-nav" aria-label="Toggle navigation menu">
-            <span></span>
-            <span></span>
-            <span></span>
-        </button>
-        <ul class="nav-links" id="primary-nav">
-            <li><a href="#about">About</a></li>
-            <li><a href="#education">Education</a></li>
-            <li><a href="#experience">Experience</a></li>
-            <li><a href="#projects">Projects</a></li>
-            <li><a href="#research">R&D</a></li>
-            <li><a href="#skills">Skills</a></li>
-            <li><a href="#contact">Contact</a></li>
-        </ul>
-    </nav>
+  <nav class="nav shell">
+    <a href="#top" class="logo" aria-label="Home">
+      <span class="logo-mark">MK</span>
+      <span class="logo-text">MadhuKumar G</span>
+    </a>
+    <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="primary-nav" aria-label="Toggle menu">
+      <span></span><span></span><span></span>
+    </button>
+    <ul class="nav-links" id="primary-nav">
+      <li><a href="#about">About</a></li>
+      <li><a href="#education">Education</a></li>
+      <li><a href="#experience">Experience</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#research">R&amp;D</a></li>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
 </header>
 
 <main id="top">
-    <section class="hero shell" id="hero">
-        <div class="hero-layout">
-            <div>
-                <p class="hero-kicker">Linux Data Center R&D | AI Engineer</p>
-                <h1>Building scalable infrastructure and production AI systems.</h1>
-                <p class="hero-copy">
-                    I specialize in Linux data center research, storage and network virtualization,
-                    and end-to-end AI system design. My work focuses on high-performance infrastructure,
-                    secure model deployment, and production-grade MLOps pipelines.
-                </p>
-                <div class="hero-cta">
-                    <a href="#contact" class="btn btn-primary">Contact Me</a>
-                    <a href="#projects" class="btn btn-ghost">View Projects</a>
-                </div>
-            </div>
 
-            <aside class="profile-card">
-                <a
-                    class="profile-photo-link"
-                    href="https://www.linkedin.com/in/madhu-kumar-g-b64963241/"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    aria-label="Open MadhuKumar G LinkedIn profile"
-                >
-                    <img src="assets/profile.jpg" alt="Photo of MadhuKumar G" class="profile-photo" />
-                    <span class="profile-photo-overlay">View LinkedIn</span>
-                </a>
-                <p class="profile-name">MadhuKumar G</p>
-                <p class="profile-role">Linux DC R&D and AI Engineer</p>
-                <a
-                    class="profile-linkedin-btn"
-                    href="https://www.linkedin.com/in/madhu-kumar-g-b64963241/"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                >
-                    Connect on LinkedIn
-                </a>
-            </aside>
-        </div>
+  <!-- HERO -->
+  <section class="hero shell" id="hero">
+    <span class="hero-glyph hero-glyph--left" aria-hidden="true">{</span>
+    <span class="hero-glyph hero-glyph--right" aria-hidden="true">}</span>
 
-        <div class="hero-metrics">
-            <article>
-                <p class="metric-value">2+</p>
-                <p class="metric-label">Years Professional Experience</p>
-            </article>
-            <article>
-                <p class="metric-value">15+</p>
-                <p class="metric-label">Production Features Delivered</p>
-            </article>
-            <article>
-                <p class="metric-value">6</p>
-                <p class="metric-label">Core Technical Domains</p>
-            </article>
-        </div>
-    </section>
-
-    <section id="about" class="section shell">
-        <p class="section-eyebrow">About</p>
-        <h2>Engineering reliable systems for data centers and intelligent platforms.</h2>
-        <p class="section-intro">
-            I work at the intersection of Linux infrastructure and Artificial Intelligence.
-            My focus areas include data center networking, distributed storage systems,
-            virtualization, AI model training, and MLOps automation.
-            I design systems that are secure, scalable, and production-ready,
-            bridging research engineering with real-world deployment.
+    <div class="hero-layout">
+      <div class="hero-content">
+        <p class="hero-kicker">
+          <span class="kicker-line" aria-hidden="true"></span>
+          Linux DC R&amp;D · AI Engineer
         </p>
-    </section>
-
-    <section id="education" class="section shell">
-        <p class="section-eyebrow">Education</p>
-        <h2>Academic Background</h2>
-        <div class="timeline">
-            <article class="card">
-                <div class="card-head">
-                    <h3>BSc Honours in Data Science and Artificial Intelligence</h3>
-                    <span>2020 - 2024</span>
-                </div>
-                <p class="card-subtitle">Sarada Vilas College, Mysore</p>
-                <ul>
-                    <li>Focused on Machine Learning, Neural Networks, and Data Analytics.</li>
-                    <li>Worked on GAN architectures, deep learning systems, and applied AI solutions.</li>
-                    <li>Built academic and production-oriented AI projects.</li>
-                </ul>
-            </article>
+        <h1>Building <em>scalable</em><br/>infrastructure &amp;<br/>production AI.</h1>
+        <p class="hero-copy">
+          Specialising in Linux data center research, storage and network virtualisation,
+          and end-to-end AI system design. High-performance infrastructure,
+          secure model deployment, and production-grade MLOps pipelines.
+        </p>
+        <div class="hero-cta">
+          <a href="#contact" class="btn btn-primary">Get in Touch</a>
+          <a href="#projects" class="btn btn-ghost">View Projects</a>
         </div>
-    </section>
-
-    <section id="experience" class="section shell">
-        <p class="section-eyebrow">Experience</p>
-        <h2>Professional Work</h2>
-        <div class="timeline">
-            <article class="card">
-                <div class="card-head">
-                    <h3>Linux DC R&D and AI Developer</h3>
-                    <span>Sep 2024 - Present</span>
-                </div>
-                <p class="card-subtitle">Vigyanlabs Innovation Pvt Ltd</p>
-                <ul>
-                    <li>Designed and researched SDN and OVN-based network virtualization for data centers.</li>
-                    <li>Worked on Linux virtualization, overlay networking, and traffic optimization.</li>
-                    <li>Implemented distributed storage solutions using Ceph and Petasan.</li>
-                    <li>Built ComputeAI platform integrating MLflow, Triton Inference Server, and PostgreSQL.</li>
-                    <li>Designed secure multi-user authentication and API key-based inference systems.</li>
-                    <li>Automated services using systemd, shell scripting, and Linux process management.</li>
-                </ul>
-            </article>
-
-            <article class="card">
-                <div class="card-head">
-                    <h3>Full Stack Developer</h3>
-                    <span>Feb 2023 - Sep 2024</span>
-                </div>
-                <p class="card-subtitle">Ogma Technologies LLP</p>
-                <ul>
-                    <li>Developed cross-platform applications using Flutter.</li>
-                    <li>Built backend services with Java Spring Boot and MongoDB.</li>
-                    <li>Designed REST APIs and production database schemas.</li>
-                    <li>Delivered client-facing applications with full lifecycle ownership.</li>
-                </ul>
-            </article>
+        <div class="stack-strip">
+          <span class="stack-label">Stack —</span>
+          <span class="stack-tag">MLflow</span>
+          <span class="stack-tag">Triton</span>
+          <span class="stack-tag">OVN</span>
+          <span class="stack-tag">Ceph</span>
+          <span class="stack-tag">PyTorch</span>
+          <span class="stack-tag">systemd</span>
         </div>
-    </section>
+      </div>
 
-    <section id="projects" class="section shell">
-        <p class="section-eyebrow">Projects</p>
-        <h2>AI and Infrastructure Platforms</h2>
-        <div class="project-grid">
-            <article class="project-card">
-                <div class="project-top">
-                    <span class="project-type">Platform Engineering</span>
-                </div>
-                <h3>ComputeAI Platform</h3>
-                <p>End-to-end ML lifecycle stack with secure model deployment, enterprise-grade inference serving, and multi-user experiment governance.</p>
-                <p>Built to reduce model release friction from research to production with consistent observability and rollback-ready deployment patterns.</p>
-                <div class="project-tags"><span>MLflow</span><span>Triton</span><span>PostgreSQL</span></div>
-            </article>
-
-            <article class="project-card">
-                <div class="project-top">
-                    <span class="project-type">Applied AI</span>
-                </div>
-                <h3>RaithaMithra</h3>
-                <p>Agricultural AI assistant for crop prediction, disease detection, rainfall estimation, and seasonal advisory analytics.</p>
-                <p>Designed as a practical decision-support layer for farmers with interpretable outputs and scalable backend APIs.</p>
-                <div class="project-tags"><span>CNN</span><span>Forecasting</span><span>Flask</span></div>
-            </article>
-
-            <article class="project-card">
-                <div class="project-top">
-                    <span class="project-type">Generative AI</span>
-                </div>
-                <h3>GAN Text-to-Image System</h3>
-                <p>Implemented conditional GAN models in PyTorch for text-conditioned image generation workflows and tuned training stability.</p>
-                <p>Improved convergence quality through structured experimentation on loss balancing, augmentation, and checkpoint evaluation.</p>
-                <div class="project-tags"><span>PyTorch</span><span>GAN</span><span>Training</span></div>
-            </article>
-
-            <article class="project-card">
-                <div class="project-top">
-                    <span class="project-type">Computer Vision</span>
-                </div>
-                <h3>YOLOv5 Detection API</h3>
-                <p>Real-time detection pipeline with low-latency streaming APIs and optimized inference throughput for live workloads.</p>
-                <p>Engineered for production readiness with resilient API behavior, frame handling controls, and predictable response timing.</p>
-                <div class="project-tags"><span>YOLOv5</span><span>Flask</span><span>Realtime</span></div>
-            </article>
+      <aside class="profile-card reveal reveal-d1">
+        <a class="profile-photo-link"
+           href="https://www.linkedin.com/in/madhu-kumar-g-b64963241/"
+           target="_blank" rel="noopener noreferrer"
+           aria-label="LinkedIn profile">
+          <img src="assets/profile.jpg" alt="Photo of MadhuKumar G" class="profile-photo" />
+          <span class="profile-photo-overlay">View LinkedIn →</span>
+        </a>
+        <div class="profile-meta">
+          <p class="profile-name">MadhuKumar G</p>
+          <p class="profile-role">Linux DC R&amp;D · AI Engineer</p>
+          <p class="profile-status">
+            <span class="status-dot" aria-hidden="true"></span>
+            Available for roles
+          </p>
+          <a class="profile-linkedin-btn"
+             href="https://www.linkedin.com/in/madhu-kumar-g-b64963241/"
+             target="_blank" rel="noopener noreferrer">
+            Connect on LinkedIn
+          </a>
         </div>
-    </section>
-
-    <section id="research" class="section shell">
-        <p class="section-eyebrow">R&D</p>
-        <h2>Data Center R&D Systems</h2>
-        <div class="project-grid research-grid">
-            <article class="project-card">
-                <div class="project-top">
-                    <span class="project-type">Virtualization Research</span>
-                </div>
-                <h3>MicroVM Research and Lightweight Virtualization</h3>
-                <p>Evaluated MicroVM architectures for faster boot, workload isolation, and resource efficiency across Linux environments.</p>
-                <p>Benchmarked startup latency and footprint behavior to identify practical patterns for cloud-native control planes.</p>
-                <div class="project-tags"><span>MicroVM</span><span>Isolation</span><span>Linux</span></div>
-            </article>
-
-            <article class="project-card">
-                <div class="project-top">
-                    <span class="project-type">Platform Prototyping</span>
-                </div>
-                <h3>Serverless Architecture Prototyping</h3>
-                <p>Designed Linux-based serverless execution environments for rapid function deployment and secure isolation strategies.</p>
-                <p>Explored runtime lifecycle controls, invocation efficiency, and operational guardrails for multi-tenant execution models.</p>
-                <div class="project-tags"><span>Serverless</span><span>Runtime</span><span>Orchestration</span></div>
-            </article>
-
-            <article class="project-card">
-                <div class="project-top">
-                    <span class="project-type">Networking Systems</span>
-                </div>
-                <h3>SDN Networking for Virtual Machines with CMS</h3>
-                <p>Implemented centralized SDN policies, overlay routing, and dynamic network controls for VM workloads.</p>
-                <p>Built control-path workflows for policy updates and topology-aware routing with maintainable CMS integration boundaries.</p>
-                <div class="project-tags"><span>SDN</span><span>OVN</span><span>Overlay Networking</span></div>
-            </article>
-
-            <article class="project-card">
-                <div class="project-top">
-                    <span class="project-type">Storage Engineering</span>
-                </div>
-                <h3>Ceph Storage Integration with CMS</h3>
-                <p>Integrated distributed storage with CMS for scalable block and object lifecycle management in production-like setups.</p>
-                <p>Automated key storage operations to simplify provisioning reliability and reduce operator intervention overhead.</p>
-                <div class="project-tags"><span>Ceph</span><span>Distributed Storage</span><span>Automation</span></div>
-            </article>
-
-            <article class="project-card">
-                <div class="project-top">
-                    <span class="project-type">Infra Automation</span>
-                </div>
-                <h3>Infrastructure Automation</h3>
-                <p>Automated deployment and service orchestration with shell scripts, systemd units, and repeatable operations pipelines.</p>
-                <p>Focused on reducing manual setup variance while improving service recoverability and deployment consistency.</p>
-                <div class="project-tags"><span>Systemd</span><span>Shell</span><span>Reliability</span></div>
-            </article>
-        </div>
-    </section>
-
-    <section id="skills" class="section shell">
-        <p class="section-eyebrow">Skills</p>
-        <h2>Core Technical Areas</h2>
-        <div class="tags">
-            <span>Linux System Administration</span>
-            <span>Shell Scripting</span>
-            <span>Ceph Storage</span>
-            <span>Petasan</span>
-            <span>Linux Virtualization</span>
-            <span>Network Virtualization</span>
-            <span>SDN / OVN</span>
-            <span>Python</span>
-            <span>Java</span>
-            <span>Flutter</span>
-            <span>Machine Learning</span>
-            <span>Neural Networks</span>
-            <span>PyTorch</span>
-            <span>TensorFlow</span>
-            <span>AI Model Training</span>
-            <span>MLOps</span>
-            <span>MLflow</span>
-            <span>NVIDIA Triton</span>
-            <span>Nginx</span>
-            <span>PostgreSQL</span>
-            <span>MongoDB</span>
-            <span>Systemd Automation</span>
-        </div>
-    </section>
-
-    <section id="contact" class="section shell contact">
-        <p class="section-eyebrow">Contact</p>
-        <h2>Open to engineering roles and collaborations.</h2>
-        <div class="contact-grid">
-            <p>
-                <span>Phone</span>
-                <a href="tel:+916360389469">+91 63603 89469</a>
-            </p>
-            <p>
-                <span>WhatsApp</span>
-                <a href="https://wa.me/916360389469" target="_blank" rel="noopener noreferrer">Chat on WhatsApp</a>
-            </p>
-            <p>
-                <span>Email</span>
-                <a href="mailto:madhusathwik555@gmail.com">madhusathwik555@gmail.com</a>
-            </p>
-            <p>
-                <span>LinkedIn</span>
-                <a href="https://www.linkedin.com/in/madhu-kumar-g-b64963241/" target="_blank" rel="noopener noreferrer">linkedin.com/in/madhu-kumar-g-b64963241</a>
-            </p>
-        </div>
-    </section>
-</main>
-
-<footer class="shell footer">
-    <p>&copy; 2026 MadhuKumar G</p>
-    <p class="footer-note">Linux DC R&D and AI Engineer</p>
-</footer>
-
-<button id="ai-chat-toggle" type="button" aria-label="Open AI assistant">
-    <span class="chat-toggle-pulse" aria-hidden="true"></span>
-    <span class="chat-toggle-icon" aria-hidden="true">
-        <svg viewBox="0 0 24 24" role="img" aria-hidden="true">
-            <path d="M12 2a2 2 0 0 1 2 2v1h2.5A3.5 3.5 0 0 1 20 8.5v6A3.5 3.5 0 0 1 16.5 18H15v2a1 1 0 0 1-1.62.78L10.6 18H7.5A3.5 3.5 0 0 1 4 14.5v-6A3.5 3.5 0 0 1 7.5 5H10V4a2 2 0 0 1 2-2Zm-2 8.25a1.25 1.25 0 1 0 0 2.5 1.25 1.25 0 0 0 0-2.5Zm4 0a1.25 1.25 0 1 0 0 2.5 1.25 1.25 0 0 0 0-2.5Z" />
-        </svg>
-    </span>
-    <span class="chat-toggle-text">AI Assistant</span>
-</button>
-
-<section id="ai-chat-window" aria-label="AI assistant" aria-hidden="true">
-    <header id="ai-chat-header">
-        <div>
-            <p class="chat-title">AI Assistant</p>
-            <p class="chat-status">Online and ready to help</p>
-        </div>
-        <div class="chat-controls">
-            <button id="ai-chat-expand" class="control-btn" type="button" aria-label="Expand chat">Expand</button>
-            <button id="ai-chat-close" class="control-btn" type="button" aria-label="Close chat">Close</button>
-        </div>
-    </header>
-
-    <div class="quick-prompts" id="quick-prompts">
-        <button type="button" class="prompt-chip" data-prompt="Summarize Madhu's current role.">Current role</button>
-        <button type="button" class="prompt-chip" data-prompt="List the top projects in this portfolio.">Top projects</button>
-        <button type="button" class="prompt-chip" data-prompt="Which skills are strongest for AI infrastructure?">AI infra skills</button>
+      </aside>
     </div>
 
-    <div id="ai-chat-messages" aria-live="polite"></div>
+    <div class="hero-metrics reveal">
+      <div class="metric-item">
+        <span class="metric-value">2</span>
+        <span class="metric-label">Years Professional Experience</span>
+      </div>
+      <div class="metric-item">
+        <span class="metric-value">15</span>
+        <span class="metric-label">Production Features Delivered</span>
+      </div>
+      <div class="metric-item metric-item--last">
+        <span class="metric-value metric-value--no-plus">6</span>
+        <span class="metric-label">Core Technical Domains</span>
+      </div>
+    </div>
+  </section>
 
-    <form id="ai-chat-input" novalidate>
-        <input type="text" id="ai-input" placeholder="Ask about Madhu's experience..." autocomplete="off" />
-        <button type="submit" id="ai-send-btn">Send</button>
-    </form>
+  <!-- ABOUT -->
+  <section id="about" class="section section--dark">
+    <div class="shell">
+      <p class="section-eyebrow reveal">About</p>
+      <h2 class="reveal reveal-d1">Engineering reliable systems for data centers and intelligent platforms.</h2>
+      <div class="about-grid">
+        <div class="reveal reveal-d2">
+          <p class="about-col-label">Focus Areas</p>
+          <div class="about-pills">
+            <span class="about-pill">Linux Infrastructure</span>
+            <span class="about-pill">MLOps</span>
+            <span class="about-pill">Distributed Storage</span>
+            <span class="about-pill">Network Virtualisation</span>
+            <span class="about-pill">AI Deployment</span>
+            <span class="about-pill">Model Serving</span>
+            <span class="about-pill">Systems Automation</span>
+            <span class="about-pill">Research Engineering</span>
+          </div>
+        </div>
+        <div class="reveal reveal-d3">
+          <p class="about-col-label">Current Stack</p>
+          <div class="stack-readout">
+            <div class="stack-row"><span class="stack-key">infra</span><span class="stack-sep">//</span><span class="stack-val">Linux · Ceph · OVN · systemd</span></div>
+            <div class="stack-row"><span class="stack-key">ml</span><span class="stack-sep">//</span><span class="stack-val">MLflow · Triton · PyTorch</span></div>
+            <div class="stack-row"><span class="stack-key">api</span><span class="stack-sep">//</span><span class="stack-val">Flask · Nginx · PostgreSQL</span></div>
+            <div class="stack-row"><span class="stack-key">lang</span><span class="stack-sep">//</span><span class="stack-val">Python · Shell · Java</span></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- EDUCATION -->
+  <section id="education" class="section">
+    <div class="shell">
+      <p class="section-eyebrow reveal">Education</p>
+      <h2 class="reveal reveal-d1">Academic Foundation</h2>
+      <div class="timeline">
+        <article class="card reveal reveal-d2">
+          <div class="card-accent" aria-hidden="true"></div>
+          <div class="card-body">
+            <div class="card-head">
+              <h3>BSc Honours in Data Science and Artificial Intelligence</h3>
+              <span class="card-date">2020 – 2024</span>
+            </div>
+            <p class="card-subtitle">Sarada Vilas College, Mysore</p>
+            <ul class="card-list">
+              <li>Focused on Machine Learning, Neural Networks, and Data Analytics.</li>
+              <li>Worked on GAN architectures, deep learning systems, and applied AI solutions.</li>
+              <li>Built academic and production-oriented AI projects across vision and generative domains.</li>
+            </ul>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- EXPERIENCE -->
+  <section id="experience" class="section">
+    <div class="shell">
+      <p class="section-eyebrow reveal">Experience</p>
+      <h2 class="reveal reveal-d1">Professional Work</h2>
+      <div class="timeline">
+        <article class="card reveal reveal-d2">
+          <div class="card-accent" aria-hidden="true"></div>
+          <div class="card-body">
+            <div class="card-head">
+              <h3>Linux DC R&amp;D and AI Developer</h3>
+              <span class="card-date card-date--active">Sep 2024 – Present</span>
+            </div>
+            <p class="card-subtitle">Vigyanlabs Innovation Pvt Ltd</p>
+            <ul class="card-list">
+              <li>Designed and researched SDN and OVN-based network virtualisation for data centers.</li>
+              <li>Worked on Linux virtualisation, overlay networking, and traffic optimisation.</li>
+              <li>Implemented distributed storage solutions using Ceph and Petasan.</li>
+              <li>Built ComputeAI platform integrating MLflow, Triton Inference Server, and PostgreSQL.</li>
+              <li>Designed secure multi-user authentication and API key-based inference systems.</li>
+              <li>Automated services using systemd, shell scripting, and Linux process management.</li>
+            </ul>
+          </div>
+        </article>
+        <article class="card reveal reveal-d3">
+          <div class="card-accent" aria-hidden="true"></div>
+          <div class="card-body">
+            <div class="card-head">
+              <h3>Full Stack Developer</h3>
+              <span class="card-date">Feb 2023 – Sep 2024</span>
+            </div>
+            <p class="card-subtitle">Ogma Technologies LLP</p>
+            <ul class="card-list">
+              <li>Developed cross-platform applications using Flutter.</li>
+              <li>Built backend services with Java Spring Boot and MongoDB.</li>
+              <li>Designed REST APIs and production database schemas.</li>
+              <li>Delivered client-facing applications with full lifecycle ownership.</li>
+            </ul>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- PROJECTS -->
+  <section id="projects" class="section section--dark">
+    <div class="shell">
+      <p class="section-eyebrow reveal">Projects</p>
+      <h2 class="reveal reveal-d1">AI &amp; Infrastructure Platforms</h2>
+      <div class="project-grid">
+        <article class="project-card project-card--dark reveal reveal-d1">
+          <div class="project-top">
+            <span class="project-type">Platform Engineering</span>
+            <span class="project-icon" aria-hidden="true">⬡</span>
+          </div>
+          <h3 style="color: aliceblue;">ComputeAI Platform</h3>
+          <p style="color: azure;">End-to-end ML lifecycle stack with secure model deployment, enterprise-grade inference serving, and multi-user experiment governance.</p>
+          <p style="color: azure;">Built to reduce model release friction from research to production with consistent observability and rollback-ready deployment patterns.</p>
+          <div class="project-tags"><span>MLflow</span><span>Triton</span><span>PostgreSQL</span></div>
+        </article>
+        <article class="project-card project-card--dark reveal reveal-d2">
+          <div class="project-top">
+            <span class="project-type">Applied AI</span>
+            <span class="project-icon" aria-hidden="true">⬡</span>
+          </div>
+          <h3 style="color: aliceblue;">RaithaMithra</h3>
+          <p style="color: azure;">Agricultural AI assistant for crop prediction, disease detection, rainfall estimation, and seasonal advisory analytics.</p>
+          <p style="color: azure;">Designed as a practical decision-support layer for farmers with interpretable outputs and scalable backend APIs.</p>
+          <div class="project-tags"><span>CNN</span><span>Forecasting</span><span>Flask</span></div>
+        </article>
+        <article class="project-card project-card--dark reveal reveal-d3">
+          <div class="project-top">
+            <span class="project-type">Generative AI</span>
+            <span class="project-icon" aria-hidden="true">⬡</span>
+          </div>
+          <h3 style="color: aliceblue;">GAN Text-to-Image System</h3>
+          <p style="color: azure;">Conditional GAN models in PyTorch for text-conditioned image generation with tuned training stability.</p>
+          <p style="color: azure;">Improved convergence quality through structured experimentation on loss balancing and checkpoint evaluation.</p>
+          <div class="project-tags"><span>PyTorch</span><span>GAN</span><span>Training</span></div>
+        </article>
+        <article class="project-card project-card--dark reveal reveal-d4">
+          <div class="project-top">
+            <span class="project-type">Computer Vision</span>
+            <span class="project-icon" aria-hidden="true">⬡</span>
+          </div>
+          <h3 style="color: aliceblue;">YOLOv5 Detection API</h3>
+          <p style="color: azure;">Real-time detection pipeline with low-latency streaming APIs and optimised inference throughput for live workloads.</p>
+          <p style="color: azure;">Engineered for production readiness with resilient API behaviour and predictable response timing.</p>
+          <div class="project-tags"><span>YOLOv5</span><span>Flask</span><span>Realtime</span></div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- R&D -->
+  <section id="research" class="section">
+    <div class="shell">
+      <p class="section-eyebrow reveal">R&amp;D</p>
+      <h2 class="reveal reveal-d1">Data Center R&amp;D Systems</h2>
+      <div class="project-grid">
+        <article class="project-card reveal reveal-d1">
+          <div class="project-top"><span class="project-type">Virtualisation</span><span class="project-icon" aria-hidden="true">⬡</span></div>
+          <h3>MicroVM Research</h3>
+          <p>Evaluated MicroVM architectures for faster boot, workload isolation, and resource efficiency across Linux environments.</p>
+          <div class="project-tags"><span>MicroVM</span><span>Isolation</span><span>Linux</span></div>
+        </article>
+        <article class="project-card reveal reveal-d2">
+          <div class="project-top"><span class="project-type">Platform</span><span class="project-icon" aria-hidden="true">⬡</span></div>
+          <h3>Serverless Architecture</h3>
+          <p>Linux-based serverless execution environments for rapid function deployment and secure isolation strategies.</p>
+          <div class="project-tags"><span>Serverless</span><span>Runtime</span><span>Orchestration</span></div>
+        </article>
+        <article class="project-card reveal reveal-d3">
+          <div class="project-top"><span class="project-type">Networking</span><span class="project-icon" aria-hidden="true">⬡</span></div>
+          <h3>SDN Networking for VMs</h3>
+          <p>Centralised SDN policies, overlay routing, and dynamic network controls for VM workloads with CMS integration.</p>
+          <div class="project-tags"><span>SDN</span><span>OVN</span><span>Overlay</span></div>
+        </article>
+        <article class="project-card reveal reveal-d4">
+          <div class="project-top"><span class="project-type">Storage</span><span class="project-icon" aria-hidden="true">⬡</span></div>
+          <h3>Ceph Storage Integration</h3>
+          <p>Distributed storage with CMS for scalable block and object lifecycle management in production-like setups.</p>
+          <div class="project-tags"><span>Ceph</span><span>Distributed</span><span>Automation</span></div>
+        </article>
+        <article class="project-card reveal reveal-d1">
+          <div class="project-top"><span class="project-type">Infra Automation</span><span class="project-icon" aria-hidden="true">⬡</span></div>
+          <h3>Infrastructure Automation</h3>
+          <p>Automated deployment and service orchestration with shell scripts, systemd units, and repeatable operations pipelines.</p>
+          <div class="project-tags"><span>Systemd</span><span>Shell</span><span>Reliability</span></div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- SKILLS -->
+  <section id="skills" class="section section--dark">
+    <div class="shell">
+      <p class="section-eyebrow reveal">Skills</p>
+      <h2 class="reveal reveal-d1">Core Technical Areas</h2>
+      <div class="skills-block">
+        <div class="skills-category reveal reveal-d2">
+          <p class="skills-cat-label">Infrastructure &amp; Systems</p>
+          <div class="tags">
+            <span>Linux System Administration</span><span>Shell Scripting</span>
+            <span>Systemd Automation</span><span>Linux Virtualisation</span><span>Nginx</span>
+          </div>
+        </div>
+        <div class="skills-category reveal reveal-d3">
+          <p class="skills-cat-label">Networking &amp; Storage</p>
+          <div class="tags">
+            <span>SDN / OVN</span><span>Network Virtualisation</span><span>Ceph Storage</span><span>Petasan</span>
+          </div>
+        </div>
+        <div class="skills-category reveal reveal-d2">
+          <p class="skills-cat-label">AI / Machine Learning</p>
+          <div class="tags">
+            <span>Machine Learning</span><span>Neural Networks</span><span>PyTorch</span>
+            <span>TensorFlow</span><span>AI Model Training</span><span>MLOps</span>
+            <span>MLflow</span><span>NVIDIA Triton</span>
+          </div>
+        </div>
+        <div class="skills-category reveal reveal-d3">
+          <p class="skills-cat-label">Languages &amp; Data</p>
+          <div class="tags">
+            <span>Python</span><span>Java</span><span>Flutter</span><span>PostgreSQL</span><span>MongoDB</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section id="contact" class="section section--contact">
+    <div class="shell">
+      <p class="section-eyebrow reveal">Contact</p>
+      <h2 class="reveal reveal-d1">Open to engineering roles and collaborations.</h2>
+      <p class="section-intro reveal reveal-d2">Whether it's infrastructure, AI deployment, or systems R&amp;D — let's talk.</p>
+      <div class="contact-grid">
+        <dl class="contact-item reveal reveal-d1">
+          <dt>Phone</dt>
+          <dd><a href="tel:+916360389469">+91 63603 89469</a></dd>
+        </dl>
+        <dl class="contact-item reveal reveal-d2">
+          <dt>WhatsApp</dt>
+          <dd><a href="https://wa.me/916360389469" target="_blank" rel="noopener noreferrer">Chat on WhatsApp</a></dd>
+        </dl>
+        <dl class="contact-item reveal reveal-d3">
+          <dt>Email</dt>
+          <dd><a href="mailto:madhusathwik555@gmail.com">madhusathwik555@gmail.com</a></dd>
+        </dl>
+        <dl class="contact-item reveal reveal-d4">
+          <dt>LinkedIn</dt>
+          <dd><a href="https://www.linkedin.com/in/madhu-kumar-g-b64963241/" target="_blank" rel="noopener noreferrer">madhu-kumar-g-b64963241</a></dd>
+        </dl>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer class="site-footer shell">
+  <span class="footer-copy">© 2026 MadhuKumar G</span>
+  <span class="footer-location">Mysuru, Karnataka, IN</span>
+  <span class="footer-note">Linux DC R&amp;D · AI Engineer</span>
+</footer>
+
+<!-- TERMINAL EASTER EGG -->
+<div class="terminal-overlay" id="terminal-overlay" role="dialog" aria-label="Terminal" aria-modal="true">
+  <div class="terminal-window">
+    <div class="terminal-titlebar">
+      <button class="t-btn t-red" id="terminal-close" aria-label="Close terminal"></button>
+      <button class="t-btn t-yellow" aria-label="Minimise"></button>
+      <button class="t-btn t-green" aria-label="Maximise"></button>
+      <span class="terminal-title">madhu@portfolio ~ bash</span>
+    </div>
+    <div class="terminal-body" id="terminal-body"></div>
+  </div>
+</div>
+
+<!-- AI CHAT TOGGLE -->
+<button id="ai-chat-toggle" type="button" aria-label="Open AI assistant">
+  <span class="chat-toggle-pulse" aria-hidden="true"></span>
+  <span class="chat-toggle-icon" aria-hidden="true">
+    <svg viewBox="0 0 24 24" aria-hidden="true">
+      <path d="M12 2a2 2 0 0 1 2 2v1h2.5A3.5 3.5 0 0 1 20 8.5v6A3.5 3.5 0 0 1 16.5 18H15v2a1 1 0 0 1-1.62.78L10.6 18H7.5A3.5 3.5 0 0 1 4 14.5v-6A3.5 3.5 0 0 1 7.5 5H10V4a2 2 0 0 1 2-2Zm-2 8.25a1.25 1.25 0 1 0 0 2.5 1.25 1.25 0 0 0 0-2.5Zm4 0a1.25 1.25 0 1 0 0 2.5 1.25 1.25 0 0 0 0-2.5Z"/>
+    </svg>
+  </span>
+  <span class="chat-toggle-text">AI Assistant</span>
+</button>
+
+<!-- AI CHAT WINDOW -->
+<section id="ai-chat-window" aria-label="AI assistant" aria-hidden="true">
+  <header id="ai-chat-header">
+    <div class="chat-header-info">
+      <p class="chat-title">Portfolio Assistant</p>
+      <p class="chat-status">
+        <span class="chat-status-dot" aria-hidden="true"></span>
+        Online · Ready to help
+      </p>
+    </div>
+    <div class="chat-controls">
+      <button id="ai-chat-expand" class="control-btn" type="button">Expand</button>
+      <button id="ai-chat-close" class="control-btn" type="button">Close</button>
+    </div>
+  </header>
+  <div class="quick-prompts" id="quick-prompts">
+    <button type="button" class="prompt-chip" data-prompt="Summarize Madhu's current role.">Current role</button>
+    <button type="button" class="prompt-chip" data-prompt="List the top projects in this portfolio.">Top projects</button>
+    <button type="button" class="prompt-chip" data-prompt="Which skills are strongest for AI infrastructure?">AI infra skills</button>
+  </div>
+  <div id="ai-chat-messages" aria-live="polite"></div>
+  <form id="ai-chat-input" novalidate>
+    <input type="text" id="ai-input" placeholder="Ask about Madhu's experience..." autocomplete="off" />
+    <button type="submit" id="ai-send-btn">Send</button>
+  </form>
 </section>
 
 <script src="script.js"></script>
